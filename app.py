@@ -8,12 +8,12 @@ import time
 from sqlalchemy.exc import OperationalError
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://sql12713926:gCIsCSnslI@sql12.freesqldatabase.com:3306/sql12713926'
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'kknsdurga123@gmail.com'
-app.config['MAIL_PASSWORD'] = 'dgsz zxjf edjn udmq'
+app.config['MAIL_USERNAME'] = 'your username'
+app.config['MAIL_PASSWORD'] = 'your password'
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
